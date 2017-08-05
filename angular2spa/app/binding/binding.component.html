@@ -1,0 +1,14 @@
+<h4 class="well">
+Click your favorite Framweork:<br/>
+<li *ngFor="let item of Items" style="cursor:pointer;background-color:lightgreen;margin-left:40px;color:black" (click)="onItemClicked(item)">
+{{item.name}}
+<br/>
+</li>
+<br/>
+You have selected:
+<input type="text" [(ngModel)]="clickedItem.name">
+</h4>
+
+<div class="container">
+    <latest-news>...</latest-news>
+</div>

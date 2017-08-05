@@ -1,0 +1,24 @@
+<div class="tab">
+    <h1 class="one">Product Details</h1>
+
+    <h4 class="panel" >Product ID: 
+    <input [(ngModel)]="product.id" 
+        class='form-control'> 
+        {{product.id}}           
+    </h4>
+
+    <h4 >Title: 
+    <input [(ngModel)]="product.title" class='form-control'>
+    {{product.title}}   
+    </h4>
+
+    <h4>Description: 
+      <input [(ngModel)]="product.description"
+      class='form-control'>  {{product.description}}    
+    </h4>
+
+    <h4>Price: 
+      <input [(ngModel)]="product.price"
+      class='form-control'> ${{product.price}}
+    </h4>    
+</div>
